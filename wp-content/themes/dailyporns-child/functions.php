@@ -87,7 +87,7 @@ function setAWSCookie()
         $domain = $urlparts['host'];
         
         if (!isset($_COOKIE[$signCookieKey]) || !$_COOKIE[$signCookieKey]) {
-            setcookie($signCookieKey, $signCookieVal, time() + 3600*8, '/', $domain, false, true);
+            setcookie($signCookieKey, $signCookieVal, time() + 3600*3, '/', $domain, false, true);
         }
     }
 }
