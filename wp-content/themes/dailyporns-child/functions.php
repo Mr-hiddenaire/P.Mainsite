@@ -78,7 +78,6 @@ function setAWSCookie()
     
     $signCookie = json_decode($signCookie, true);
     
-    var_dump($signCookie);exit;
     if (!$signCookie) {
         $signCookie = [];
     }
