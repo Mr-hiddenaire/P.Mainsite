@@ -86,7 +86,7 @@ function setAWSCookie()
         $urlparts = parse_url(site_url());
         $domain = $urlparts['host'];
         
-        setcookie($signCookieKey, $signCookieVal, time() + 3600*3, '/', $domain, true, true);
+        setcookie($signCookieKey, $signCookieVal, time() + 3600*3, '/', $domain, false, true);
     }
 }
 
