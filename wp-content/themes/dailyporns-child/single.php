@@ -18,23 +18,23 @@
                 .vjs-default-skin .vjs-big-play-button {
                     left: 40%;
                     top: 40%;
-                    width: 20%;
-                    height: 20%;
+                    width: 10%;
+                    height: 10%;
                 }
                 @media only screen and (max-width:599px) {
                     .vjs-default-skin .vjs-big-play-button {
                     	left:25%;
                     	top:25%;
-                    	width:50%;
-                    	height:50%;
+                    	width:7%;
+                    	height:7%;
                     }
                 }
                 @media only screen and (min-width:600px) and (max-width:768px) {
                     .vjs-default-skin .vjs-big-play-button {
                     	left:25%;
                     	top:25%;
-                    	width:50%;
-                    	height:50%;
+                    	width:7%;
+                    	height:7%;
                     	font-size:5em;
                     }
                 }
