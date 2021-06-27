@@ -25,7 +25,7 @@
                     .vjs-default-skin .vjs-big-play-button {
                     	left:25%;
                     	top:25%;
-                    	width:7%;
+                    	width:50%;
                     	height:50%;
                     }
                 }
