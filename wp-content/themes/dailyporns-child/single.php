@@ -53,9 +53,9 @@ var player = videojs("playerId", {
 	poster: "<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false )[0] ?? '';?>"
 });
 player.src({
-src: "<?php echo get_post_meta($post->ID, 'm3u8', true);?>",
-type: "application/x-mpegURL",
-withCredentials: true
+	src: "<?php echo get_post_meta($post->ID, 'm3u8', true);?>",
+	type: "application/x-mpegURL",
+	withCredentials: true
 });
 player.play();
 </script>
