@@ -49,7 +49,7 @@ jQuery("form").attr("novalidate", true);
 var player = videojs("playerId", {
 	fluid: true,
 	controls: true,
-	autoplay: false,
+	autoplay: "muted",
 	poster: "<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false )[0] ?? '';?>"
 });
 player.src({
