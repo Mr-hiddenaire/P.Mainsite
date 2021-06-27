@@ -57,6 +57,5 @@ player.src({
 	type: "application/x-mpegURL",
 	withCredentials: true
 });
-player.play();
 </script>
 <?php get_footer(); ?>
