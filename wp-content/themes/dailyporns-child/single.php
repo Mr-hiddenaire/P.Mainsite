@@ -26,15 +26,15 @@
                     	left:25%;
                     	top:25%;
                     	width:7%;
-                    	height:7%;
+                    	height:50%;
                     }
                 }
                 @media only screen and (min-width:600px) and (max-width:768px) {
                     .vjs-default-skin .vjs-big-play-button {
                     	left:25%;
                     	top:25%;
-                    	width:7%;
-                    	height:7%;
+                    	width:50%;
+                    	height:50%;
                     	font-size:5em;
                     }
                 }
