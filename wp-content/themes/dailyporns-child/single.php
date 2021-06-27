@@ -38,9 +38,6 @@
                     	font-size:5em;
                     }
                 }
-                .vjs-has-started .vjs-poster {
-                    display:block;
-                }
 			    </style>
 			</div><!-- .entry-content -->
 
