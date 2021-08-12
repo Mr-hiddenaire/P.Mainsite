@@ -2,3 +2,4 @@ wp-config.php
 wp-content/uploads/*
 wp-content/themes/twentytwentyone/*
 .idea/*
+wp-content/plugins/change-wp-admin-login/*
