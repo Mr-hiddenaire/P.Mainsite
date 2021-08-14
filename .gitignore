@@ -1,5 +1,6 @@
 wp-config.php
 wp-content/uploads/*
+wp-content/plugins/*
 wp-content/themes/twentytwentyone/*
 .idea/*
 wp-content/plugins/mega_main_menu/src/css/cache.skin.css
