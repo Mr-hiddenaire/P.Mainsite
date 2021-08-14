@@ -13,7 +13,6 @@ wp-content/plugins/*
 !wp-content/plugins/index.php
 !wp-content/upgrade/
 wp-content/upgrade/*
-!wp-content/upgrade/index.php
 !wp-content/uploads/
 wp-content/uploads/*
 !wp-content/uploads/index.php
