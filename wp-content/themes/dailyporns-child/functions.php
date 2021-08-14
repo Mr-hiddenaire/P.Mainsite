@@ -92,7 +92,7 @@ function setAWSCookie()
 function block_wp_admin_init()
 {
     if (strpos(strtolower($_SERVER['REQUEST_URI']),'/wp-admin/') !== false) {
-        if (!is_super_admin()) {
+        if (!is_super_admin() && basename($_SERVER['REQUEST_URI']) != 'admin-ajax.php') {
             wp_redirect(get_option('siteurl'), 302);
         }
     }
