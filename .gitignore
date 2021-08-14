@@ -1,6 +1,8 @@
 wp-config.php
-wp-content/uploads/*
-wp-content/plugins/*
-wp-content/themes/twentytwentyone/*
 .idea/*
-wp-content/plugins/mega_main_menu/src/css/cache.skin.css
+!wp-content/
+wp-content/*
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/dailyporns
+!wp-content/themes/dailyporns-child
