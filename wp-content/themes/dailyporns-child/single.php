@@ -61,3 +61,10 @@ player.src({
 });
 </script>
 <?php get_footer(); ?>
+<style>
+    .gourlbox {
+        min-width: 100% !important;
+        padding-top: 0px;
+        margin-top: -135px;
+    }
+</style>
