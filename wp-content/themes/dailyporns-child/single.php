@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 <?php gt_set_post_view(); ?>
+<?php global $gourl;?>
 <div id="container" class="row">
+	<?php if (is_object($gourl) && $gourl->is_premium_user()): ?>
   <div id="primary" class="medium-10 small-11 small-centered columns">
-  	<article <?php post_class('articlebox'); ?>>
+  	<article <?php post_class('articlebox'); ?>
 	<?php	
 		while ( have_posts() ) : the_post(); ?>
 			<header class="entry-header entry-header-single">
@@ -15,7 +17,6 @@
 				<?php the_content();?>
 				<video-js id=playerId class="vjs-default-skin vjs-big-play-centered"></video-js>
 			</div><!-- .entry-content -->
-
 			<div class="entry-meta cat-and-tags">
 				<?php 
 				// view
@@ -30,8 +31,6 @@
 	</article>
 
     </div><!-- #primary -->
-
-
 	<?php 
         	// Related Posts
             $displayrelatedposts = richflicks_themeoptions('displayrelatedposts'); 
@@ -43,14 +42,17 @@
             endif;
     	endwhile; 
 	?>
+	<?php else: ?>
+		<?php echo do_shortcode("[gourl-membership]"); ?>
+	<?php endif; ?>
 </div> <!-- #container -->
 <script>
 jQuery("form").attr("novalidate", true);
-var player = videojs("playerId", {
-	fluid: true,
-	autoplay: false,
-	controls: true,
-	poster: "<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false )[0] ?? '';?>"
+let player = videojs("playerId", {
+    fluid: true,
+    autoplay: false,
+    controls: true,
+    poster: "<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full', false )[0] ?? '';?>"
 });
 player.src({
 	src: "<?php echo get_post_meta($post->ID, 'm3u8', true);?>",
