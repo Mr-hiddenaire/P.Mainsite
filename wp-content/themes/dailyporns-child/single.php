@@ -2,7 +2,7 @@
 <?php gt_set_post_view(); ?>
 <?php global $gourl;?>
 <div id="container" class="row">
-	<?php if (is_object($gourl) && $gourl->is_premium_user()): ?>
+	<?php if (is_object($gourl) && $gourl->is_premium_user() && PREMIUM): ?>
   <div id="primary" class="medium-10 small-11 small-centered columns">
   	<article <?php post_class('articlebox'); ?>
 	<?php	
