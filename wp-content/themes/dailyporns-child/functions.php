@@ -77,7 +77,8 @@ function setAWSCookie()
     $signCookie = exec($cmdGettingCookieOfAWS);
     
     $signCookie = json_decode($signCookie, true);
-    
+
+    var_dump($signCookie);
     if (!$signCookie) {
         $signCookie = [];
     }

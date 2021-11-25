@@ -7,7 +7,15 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
      <?php wp_head(); ?>
      <script>var $ = jQuery.noConflict();</script>
-      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHZHWNKV3K"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZHZHWNKV3K');
+      </script>
   </head>
 
   <body <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
