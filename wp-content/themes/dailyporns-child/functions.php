@@ -11,7 +11,7 @@ function gt_get_post_view()
     $count = get_post_meta( get_the_ID(), 'post_views_count', true );
     
     if ($count <= 0) {
-        return '1 views';
+        return '1 view';
     }
     
     if ($count < 1000) {
