@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
 		jQuery(vTagObj).attr("autoplay", false);
 	});
 	
-	jQuery(".postlistthumb").on("click touchstart", function(){
+	jQuery(".postlistthumb").on("touchstart", function(){
 		vTagObj = jQuery(this).find("video");
 		videoPreviewUrl = jQuery(vTagObj).attr("data-src");
 		jQuery(vTagObj).attr("src", videoPreviewUrl);
@@ -21,5 +21,6 @@ jQuery(document).ready(function(){
 		jQuery(vTagObj).attr("autoplay", true);
 		jQuery(vTagObj).attr("disableremoteplayback", true);
 		jQuery(vTagObj).attr("playsinline", true);
+		jQuery(vTagObj).attr("controls", false);
 	});
 });
